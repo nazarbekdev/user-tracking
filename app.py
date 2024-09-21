@@ -15,7 +15,7 @@ client = TelegramClient('session_name', api_id, api_hash)
 client.start()
 
 # Foydalanuvchi ID yoki username ni kiriting
-user_id = 'uz_pydev'
+user_id = 'username_or_userid'
 
 
 # Foydalanuvchi holatini kuzatish uchun funksiya
