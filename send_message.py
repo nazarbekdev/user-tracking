@@ -18,8 +18,12 @@ users_lst = users.split(',')
 async def main():
     async with TelegramClient('anon', api_id, api_hash) as client:
         for i in range(15):
-            # await client.send_message(int(random.choice(users_lst)), random.choice(svg_lst))
+            # Send message
             await client.send_message(int(random.choice(users_lst)), lorem.sentence())
+            # await client.send_message(1234567890, random.choice(svg_lst))
+
+            # Send file
+            await client.send_file(1234567890, '/file/img.jpg')
 
 # Working function
 asyncio.run(main())
