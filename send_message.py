@@ -3,7 +3,6 @@ import os
 import lorem
 from dotenv import load_dotenv
 from telethon import TelegramClient
-import random
 load_dotenv()
 
 api_id = os.getenv('api_id')
